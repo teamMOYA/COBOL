@@ -1,0 +1,8 @@
+       01  REG-COLEGIOS.                                                00010000
+           05 COD-COLEGIO        PIC 99.                                00020002
+           05 DATOS-ASIGNATURAS, OCCURS 6 TIMES.                        00030000
+              10 CT-ALUMNOS-ASIG PIC 9(5).                              00040000
+              10 AC-NOTAS-ASIG   PIC 9(6).                              00050000
+              10 NOTA-MEDIA-ASIG PIC 99V99.                             00051001
+           05 NOTA-MEDIA-TOTAL   PIC 99V99.                             00060000
+

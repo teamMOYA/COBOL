@@ -1,0 +1,14 @@
+       01  AREA-COMUNICACIONES-PRACTICA-4.                              00010000
+           05 DATOS-ENTRADA-PRACTICA-4.                                 00020000
+              10 DATOS-ASIGNATURAS, OCCURS 6 TIMES.                     00030000
+                 15 CT-ALUMNOS-ASIG PIC 9(5).                           00040000
+                 15 AC-NOTAS-ASIG   PIC 9(6).                           00050000
+           05 DATOS-SALIDA-PRACTICA-4.                                  00060001
+              10 COD-RETORNO-PRACTICA-4 PIC 9.                          00070000
+                 88 TODO-BIEN     VALUE 0.                              00080000
+                 88 LAS-6-A-CEROS VALUE 1.                              00090000
+                 88 NOTA-MAYOR-10 VALUE 2.                              00100000
+              10 MEDIA-ASIGNATURAS, OCCURS 6 TIMES.                     00110000
+                 15 NOTA-MEDIA-ASIG PIC 99V99.                          00120000
+              10 NOTA-MEDIA-TOTAL   PIC 99V99.                          00130000
+

@@ -1,0 +1,23 @@
+      ******************************************************************
+      * DCLGEN TABLE(P390C.COLEGIOS)                                   *
+      *        LIBRARY(CURSO.DB2.COBOL(CCCOLEG))                       *
+      *        ACTION(REPLACE)                                         *
+      *        LANGUAGE(COBOL)                                         *
+      *        QUOTE                                                   *
+      *        DBCSDELIM(NO)                                           *
+      * ... IS THE DCLGEN COMMAND THAT MADE THE FOLLOWING STATEMENTS   *
+      ******************************************************************
+           EXEC SQL DECLARE P390C.COLEGIOS TABLE
+           ( COD_COLEGIO                    INTEGER NOT NULL,
+             NOMBRE                         CHAR(15) NOT NULL
+           ) END-EXEC.
+      ******************************************************************
+      * COBOL DECLARATION FOR TABLE P390C.COLEGIOS                     *
+      ******************************************************************
+       01  DCLCOLEGIOS.
+           10 COD-COLEGIO          PIC S9(9) USAGE COMP.
+           10 NOMBRE               PIC X(15).
+      ******************************************************************
+      * THE NUMBER OF COLUMNS DESCRIBED BY THIS DECLARATION IS 2       *
+      ******************************************************************
+

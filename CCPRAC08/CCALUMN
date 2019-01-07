@@ -1,0 +1,29 @@
+      ******************************************************************
+      * DCLGEN TABLE(P390C.ALUMNOS)                                    *
+      *        LIBRARY(CURSO.DB2.COBOL(CCALUMN))                       *
+      *        ACTION(REPLACE)                                         *
+      *        LANGUAGE(COBOL)                                         *
+      *        QUOTE                                                   *
+      *        DBCSDELIM(NO)                                           *
+      * ... IS THE DCLGEN COMMAND THAT MADE THE FOLLOWING STATEMENTS   *
+      ******************************************************************
+           EXEC SQL DECLARE P390C.ALUMNOS TABLE
+           ( NIF                            CHAR(9) NOT NULL,
+             NOMBRE                         CHAR(15) NOT NULL,
+             APELLIDOS                      CHAR(39) NOT NULL,
+             COD_COLEGIO                    INTEGER NOT NULL,
+             TELEFONO                       INTEGER
+           ) END-EXEC.
+      ******************************************************************
+      * COBOL DECLARATION FOR TABLE P390C.ALUMNOS                      *
+      ******************************************************************
+       01  DCLALUMNOS.
+           10 NIF                  PIC X(9).
+           10 NOMBRE               PIC X(15).
+           10 APELLIDOS            PIC X(39).
+           10 COD-COLEGIO          PIC S9(9) USAGE COMP.
+           10 TELEFONO             PIC S9(9) USAGE COMP.
+      ******************************************************************
+      * THE NUMBER OF COLUMNS DESCRIBED BY THIS DECLARATION IS 5       *
+      ******************************************************************
+

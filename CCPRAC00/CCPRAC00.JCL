@@ -1,0 +1,9 @@
+//P390CJCL JOB TBSIS,'XXXXXXXXXXX',
+//*            TYPRUN=SCAN,
+//             NOTIFY=&SYSUID,
+//             MSGCLASS=V,
+//             TIME=(0,30),
+//             CLASS=A
+//JOBLIB  DD  DSN=CURSO.COBOL.LOAD,DISP=SHR
+//CCPRAC00 EXEC PGM=CCPRAC00
+//SYSOUT   DD  SYSOUT=*

@@ -1,0 +1,23 @@
+      ******************************************************************
+      * DCLGEN TABLE(P390C.ASIGNATURAS)                                *
+      *        LIBRARY(CURSO.DB2.COBOL(CCASIG))                        *
+      *        ACTION(REPLACE)                                         *
+      *        LANGUAGE(COBOL)                                         *
+      *        QUOTE                                                   *
+      *        DBCSDELIM(NO)                                           *
+      * ... IS THE DCLGEN COMMAND THAT MADE THE FOLLOWING STATEMENTS   *
+      ******************************************************************
+           EXEC SQL DECLARE P390C.ASIGNATURAS TABLE
+           ( COD_ASIG                       CHAR(3) NOT NULL,
+             NOMBRE                         CHAR(15) NOT NULL
+           ) END-EXEC.
+      ******************************************************************
+      * COBOL DECLARATION FOR TABLE P390C.ASIGNATURAS                  *
+      ******************************************************************
+       01  DCLASIGNATURAS.
+           10 COD-ASIG             PIC X(3).
+           10 NOMBRE               PIC X(15).
+      ******************************************************************
+      * THE NUMBER OF COLUMNS DESCRIBED BY THIS DECLARATION IS 2       *
+      ******************************************************************
+
